@@ -1,9 +1,9 @@
 #include <iostream>
 #include <Mascota.hpp>
 
-int main ( )
+int main()
 {
-    std::cout<<"Juego de mascotas."<<std::endl;
+    std::cout << "Juego de mascotas." << std::endl;
 
     Mascota m1, m2, m3;
 
