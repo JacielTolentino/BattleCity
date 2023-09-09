@@ -1,1 +1,0 @@
-g++ src/main.cpp -o bin/Mascota.cpp -I include
