@@ -9,7 +9,7 @@
 
 int main()
 {
-    int i;
+ 
     std::cout << "Battle Citty" << std::endl;
 
     Enemigo E1, E2, E3, E4;
@@ -20,7 +20,6 @@ int main()
     E2.AsignarClase("Acorazado");
     E3.AsignarClase("Rapido");
     E4.AsignarClase("Fuerte");
-
 
     return 0;
 }

@@ -7,8 +7,8 @@ class Poder
 {
 private:
     char clase;
+
 public:
     Poder(/* args */);
     ~Poder();
 };
-
