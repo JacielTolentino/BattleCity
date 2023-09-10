@@ -22,7 +22,7 @@ public:
 
     ~Mascota() {}
 
-    void DEcirNombre()
+    void DecirNombre()
     {
         std::cout << "Mi nombre es: " << this->name << std::endl;
     }
