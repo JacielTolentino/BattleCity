@@ -1,0 +1,134 @@
+class Juego
+class Sonido
+class Animado
+class HUD 
+class Score 
+class Ronda
+class Limite
+class Borde
+class Vida
+class Invensibilidad
+class Tiempo
+class Player
+class Estructura
+class Ladrillo
+class Piedra
+class Agua 
+class Arbusto
+class Enemigo       
+class Nivel
+class Rango
+class Tanque
+class TanqueBlindado
+class TanqueRapido
+class Poder
+class Reloj 
+class Granada
+class Refuerzo
+class Blindaje
+class Bala 
+class Estandarte
+class Color 
+class Rojo
+class Verde
+class Dorado 
+class Gris 
+class Menu
+class Opcion
+class Mensaje
+class Final
+
+Juego          *--  Final
+Juego          *--  HUD
+Juego          *--  Sonido
+Juego          *--  Animado
+Juego          *--  Nivel
+Juego          *--  Menu
+Juego          *--  Mensaje
+Juego          *--  Opcion
+Juego          *--  Player
+Juego          *--  Enemigo
+HUD            *--  Score
+HUD            *--  Limite
+HUD            *--  Ronda
+HUD            *--  Estructura
+HUD            *--  Player
+HUD            *--  Enemigo
+HUD            *--  Borde
+HUD            *--  Nivel
+HUD            *--  Estandarte
+HUD            *--  Menu
+Menu           *--  Animado
+Menu           *--  Sonido
+Menu           *--  Limite
+Menu           o--  Opcion
+Menu           o--  Ronda
+Menu           o--  Final
+Opcion         *--  Mensaje
+Opcion         *--  Nivel
+Opcion         *--  Final
+Opcion         *--  Limite
+Ronda          *--  Limite
+Score          o--  Nivel
+Score          o--  Ronda
+Player         *--  Vida
+Player         *--  Sonido
+Player         *--  Animado
+Player         *--  Color
+Player         *--  Borde
+Player         o--  Score
+Player         o--  Nivel
+Player         o--  Bala
+Player         o--  Limite
+Player         o--  Poder
+Player         o--  Menu
+Player         o--  Opcion
+Player         o--  Final
+Player         o--  Nivel
+Player         o--  Enemigo
+Enemigo        *--  Color
+Enemigo        *--  Vida
+Enemigo        *--  Rango
+Enemigo        *--  Sonido
+Enemigo        *--  Animado
+Enemigo        *--  Limite
+Enemigo        *--  Borde
+Enemigo        o--  Estandarte
+Enemigo        o--  Poder
+Enemigo        o--  Bala
+Final          o--  Limite
+Final          o--  Mensaje
+Rango          *--  Color
+Gris           --|> Color 
+Dorado         --|> Color 
+Verde          --|> Color 
+Rojo           --|> Color 
+Tanque         --|> Rango
+TanqueBlindado --|> Rango 
+TanqueRapido   --|> Rango
+Estructura     *--  Borde 
+Estructura     *--  Limite
+Piedra         --|> Estructura
+Ladrillo       --|> Estructura
+Arbusto        --|> Estructura
+Agua           --|> Estructura
+Borde          *--  Limite
+Poder          *--  Animado
+Poder          *--  Borde
+Refuerzo       --|> Poder
+Blindaje       --|> Poder
+Granada        --|> Poder
+Reloj          --|> Poder
+Invensibilidad --|> Poder
+Invensibilidad *--  Tiempo
+Bala           *--  Sonido
+Bala           *--  Animado
+Bala           *--  Tiempo
+Bala           *--  Borde
+Bala           o--  Estructura
+Bala           o--  Estandarte
+Mensaje        *--  Limite
+Estandarte     *--  Sonido
+Estandarte     *--  Animado
+Estandarte     *--  Borde
+Estandarte     *--  Vida
